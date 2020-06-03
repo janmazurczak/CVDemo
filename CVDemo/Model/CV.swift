@@ -42,6 +42,18 @@ struct AppStoreLink: Codable {
     let itemID: String
 }
 
+extension CVBranch {
+    var displayText: String {
+        switch self {
+        case .block(let block): return block.title
+        case .text(let text): return text
+        case .link(let link): return link.name
+        case .mail(let mail): return mail.name
+        case .appStoreLink(let link): return link.name
+        }
+    }
+}
+
 extension CVBranch: Codable {
     enum CodingKeys: CodingKey {
         case block

@@ -10,6 +10,7 @@ import Foundation
 
 protocol ConfigurationScheme {
     var communicator: BackendCommunicator { get }
+    var style: Style { get }
     var explorationFlow: ExplorationFlow { get }
     func makePresenter() -> Presenter
 }
@@ -24,8 +25,9 @@ struct Configuration {
 
 struct DefaultConfiguration: ConfigurationScheme {
     let communicator: BackendCommunicator = StandardBackendCommunicator(at: .prodEndpoint)
+    let style = Style.default
     let explorationFlow: ExplorationFlow = DefaultExplorationFlow()
-    func makePresenter() -> Presenter { fatalError() } //TODO
+    func makePresenter() -> Presenter { return BlockUI() }
 }
 
 extension URL {

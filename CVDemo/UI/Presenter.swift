@@ -7,5 +7,5 @@
 //
 
 protocol Presenter: class {
-    func present(_ cv: CV)
+    func present(_ block: CVBlock)
 }

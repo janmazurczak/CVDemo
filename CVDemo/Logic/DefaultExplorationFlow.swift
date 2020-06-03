@@ -13,12 +13,12 @@ class DefaultExplorationFlow: ExplorationFlow {
         let cachedCV =
             CV(contentsOf: .cvCache) ?? // Check what's stored already
                 CV(version: -1, root: .init(title: "Loading...", items: [])) // Create a placeholder if nothing is stored
-        presenter.present(cachedCV)
+        presenter.present(cachedCV.root)
         Configuration.current.communicator.fetch(CV.self, at: ["getCV"]) { [weak presenter] in
             guard let cv = $0 else { return }
             try? JSONEncoder().encode(cv).write(to: .cvCache)   // Store what's downloaded
             guard cv.version > cachedCV.version else { return } // Don't refresh if there is no newer version
-            presenter?.present(cv)
+            presenter?.present(cv.root)
         }
     }
 }

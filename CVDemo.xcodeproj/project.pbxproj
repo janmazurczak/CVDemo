@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0838CB0248778170090A33E /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0838CAF248778170090A33E /* Style.swift */; };
+		A0838CB224877E7F0090A33E /* NavigationUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0838CB124877E7F0090A33E /* NavigationUI.swift */; };
 		A0BDB3882486B74300B13252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3872486B74300B13252 /* AppDelegate.swift */; };
 		A0BDB38D2486B74300B13252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BDB38B2486B74300B13252 /* Main.storyboard */; };
 		A0BDB38F2486B74400B13252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0BDB38E2486B74400B13252 /* Assets.xcassets */; };
@@ -18,9 +20,17 @@
 		A0BDB3A52486BA2500B13252 /* DefaultExplorationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3A42486BA2500B13252 /* DefaultExplorationFlow.swift */; };
 		A0BDB3A72486BA9700B13252 /* StandardBackendCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3A62486BA9700B13252 /* StandardBackendCommunicator.swift */; };
 		A0BDB3A92486BB1E00B13252 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3A82486BB1E00B13252 /* Presenter.swift */; };
+		A0BDB3AB2486D7A100B13252 /* BlockUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3AA2486D7A100B13252 /* BlockUI.swift */; };
+		A0BDB3AF2486E93200B13252 /* FullWidthCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3AE2486E93200B13252 /* FullWidthCollectionViewController.swift */; };
+		A0BDB3B12486E95400B13252 /* FullWidthAutosizingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3B02486E95400B13252 /* FullWidthAutosizingCell.swift */; };
+		A0BDB3B32486EFBD00B13252 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3B22486EFBD00B13252 /* Header.swift */; };
+		A0BDB3B52486EFC700B13252 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3B42486EFC700B13252 /* TextCell.swift */; };
+		A0BDB3B72486EFD300B13252 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDB3B62486EFD300B13252 /* ButtonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0838CAF248778170090A33E /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		A0838CB124877E7F0090A33E /* NavigationUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUI.swift; sourceTree = "<group>"; };
 		A0BDB3842486B74300B13252 /* CVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BDB3872486B74300B13252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0BDB38C2486B74300B13252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,6 +44,12 @@
 		A0BDB3A42486BA2500B13252 /* DefaultExplorationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultExplorationFlow.swift; sourceTree = "<group>"; };
 		A0BDB3A62486BA9700B13252 /* StandardBackendCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardBackendCommunicator.swift; sourceTree = "<group>"; };
 		A0BDB3A82486BB1E00B13252 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A0BDB3AA2486D7A100B13252 /* BlockUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockUI.swift; sourceTree = "<group>"; };
+		A0BDB3AE2486E93200B13252 /* FullWidthCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWidthCollectionViewController.swift; sourceTree = "<group>"; };
+		A0BDB3B02486E95400B13252 /* FullWidthAutosizingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWidthAutosizingCell.swift; sourceTree = "<group>"; };
+		A0BDB3B22486EFBD00B13252 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		A0BDB3B42486EFC700B13252 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		A0BDB3B62486EFD300B13252 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +118,14 @@
 			isa = PBXGroup;
 			children = (
 				A0BDB3A82486BB1E00B13252 /* Presenter.swift */,
+				A0838CAF248778170090A33E /* Style.swift */,
+				A0838CB124877E7F0090A33E /* NavigationUI.swift */,
+				A0BDB3AE2486E93200B13252 /* FullWidthCollectionViewController.swift */,
+				A0BDB3B02486E95400B13252 /* FullWidthAutosizingCell.swift */,
+				A0BDB3AA2486D7A100B13252 /* BlockUI.swift */,
+				A0BDB3B22486EFBD00B13252 /* Header.swift */,
+				A0BDB3B42486EFC700B13252 /* TextCell.swift */,
+				A0BDB3B62486EFD300B13252 /* ButtonCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -180,11 +204,19 @@
 				A0BDB39F2486B8AF00B13252 /* Configuration.swift in Sources */,
 				A0BDB3A72486BA9700B13252 /* StandardBackendCommunicator.swift in Sources */,
 				A0BDB3A92486BB1E00B13252 /* Presenter.swift in Sources */,
+				A0BDB3AB2486D7A100B13252 /* BlockUI.swift in Sources */,
+				A0838CB0248778170090A33E /* Style.swift in Sources */,
+				A0BDB3B32486EFBD00B13252 /* Header.swift in Sources */,
+				A0BDB3B12486E95400B13252 /* FullWidthAutosizingCell.swift in Sources */,
 				A0BDB3A52486BA2500B13252 /* DefaultExplorationFlow.swift in Sources */,
+				A0BDB3B52486EFC700B13252 /* TextCell.swift in Sources */,
+				A0BDB3AF2486E93200B13252 /* FullWidthCollectionViewController.swift in Sources */,
 				A0BDB3A32486B8E300B13252 /* ExplorationFlow.swift in Sources */,
+				A0838CB224877E7F0090A33E /* NavigationUI.swift in Sources */,
 				A0BDB3A12486B8D300B13252 /* BackendCommunicator.swift in Sources */,
 				A0BDB39D2486B89200B13252 /* CV.swift in Sources */,
 				A0BDB3882486B74300B13252 /* AppDelegate.swift in Sources */,
+				A0BDB3B72486EFD300B13252 /* ButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
